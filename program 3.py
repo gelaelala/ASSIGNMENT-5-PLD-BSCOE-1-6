@@ -9,4 +9,4 @@ else:
         if Age == 18:
             print ("Debut")
         else:
-            print ("Others")
+            print ("Adult")
