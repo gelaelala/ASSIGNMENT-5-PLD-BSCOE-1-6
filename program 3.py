@@ -6,4 +6,7 @@ else:
     if Age >= 13 and Age <= 17:
         print ("Teen")
     else:
-        print ("Others")
+        if Age == 18:
+            print ("Debut")
+        else:
+            print ("Others")
