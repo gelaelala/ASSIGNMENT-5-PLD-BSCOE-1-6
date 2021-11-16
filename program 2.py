@@ -1,16 +1,25 @@
-def getnumbers ():
+
+def getnumbers():
     firstnumber = int(input("Enter first number: "))
     secondnumber = int(input("Enter second number: "))
-    thirdnumber = (input("Enter third number: "))
+    thirdnumber = int(input("Enter third number: "))
     return firstnumber, secondnumber, thirdnumber
 
-def lowestnumber (firstnum, secondnum, thirdnum):
-    if firstnum < secondnum:
-        if firstnum < thirdnum:
-            lowestnum = firstnum
-            print (firstnum,"is the smallest number.")
+def lowestnumber(firstnum, secondnum, thirdnum):
+    if firstnum < secondnum and firstnum < thirdnum:
+        return firstnum
+    else:
+        if secondnum < firstnum and secondnum < thirdnum:
+           return secondnum
         else:
-            lowestnum = thirdnum
-            print (thirdnum, "is the smallest number.")
+            if thirdnum < firstnum and thirdnum < secondnum:
+                return thirdnum
 
-first_number, second_number, third_number = getnumbers()
+def display (lowest_number):
+    print (f"{lowest_number} is the smallest number.")
+
+first_num, second_num, third_num = getnumbers()
+
+lowestnum = lowestnumber(first_num, second_num, third_num)
+
+display (lowestnum)
