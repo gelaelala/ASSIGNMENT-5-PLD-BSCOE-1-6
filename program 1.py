@@ -20,4 +20,24 @@ else:
                         print ("Your grade is: 2.0")
                         print ("Description: Good")
                     else:
-                        print ("Others")
+                        if grade >= 81.5 and grade <= 84.4:
+                            print ("Your grade is: 2.25")
+                            print ("Description: Good")
+                        else:
+                            if grade >= 78.5 and grade <= 81.4:
+                                print ("Your grade is: 2.5")
+                                print ("Description: Satisfactory")
+                            else:
+                                if grade >= 75.5 and grade <= 78.4:
+                                    print ("Your grade is 2.75")
+                                    print ("Description: Satisfactory")
+                                else:
+                                    if grade >= 74.5 and grade <= 75.4:
+                                        print ("Your grade is: 3.0")
+                                        print ("Description: Passing")
+                                    else:
+                                        if grade >= 64.5 and grade <= 74.4:
+                                            print ("Your grade is: 5.0")
+                                            print ("Description: Failure")
+                                        else:
+                                            print ("Others")
