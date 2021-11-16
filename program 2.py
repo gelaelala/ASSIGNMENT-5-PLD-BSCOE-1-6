@@ -9,11 +9,10 @@ def lowestnumber(firstnum, secondnum, thirdnum):
     if firstnum < secondnum and firstnum < thirdnum:
         return firstnum
     else:
-        if secondnum < firstnum and secondnum < thirdnum:
+        if secondnum < thirdnum:
            return secondnum
         else:
-            if thirdnum < firstnum and thirdnum < secondnum:
-                return thirdnum
+             return thirdnum
 
 def display (lowest_number):
     print (f"{lowest_number} is the smallest number.")
