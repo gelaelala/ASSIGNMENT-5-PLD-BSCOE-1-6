@@ -1,9 +1,12 @@
 grade = float(input("Enter grade: "))
 
-if grade >= 96.5 and grade <= 100.0:
-    print("Your grade is: 1.0")
-    print ("Description: Excellent")
+if grade <= 64.4:
+    print ("Invalid input. Please try again.")
 else:
+    if grade >= 96.5 and grade <= 100.0:
+        print("Your grade is: 1.0")
+        print ("Description: Excellent")
+    else:
         if grade >= 93.5 and grade <= 96.4:
             print ("Your grade is: 1.25")
             print ("Description: Excellent")
